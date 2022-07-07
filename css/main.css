@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #010001;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+/*nav_block*/
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 105px;
+    padding-right: 105px;
+    padding-top: 53px;
+}
+
+.nav-elements {
+    position: relative;
+    left: 20px;
+}
+
+.nav-elements ul {
+    display: flex;
+}
+
+.elements-list {
+    padding-right: 20px;
+}
+
+.elements-list a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.nav-info {
+    position: relative;
+    left: 20px;
+}
+
+.nav-info ul {
+    display: flex;
+}
+
+.info-list {
+    padding-right: 20px;
+}
+
+.info-list a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: none;
+    color: #808080;
+    transition: 0.5s;
+}
+
+.info-list a:hover {
+    color: white;
+}
+
+/*main_block*/
+
+main {
+    margin: auto;
+    max-width: 1440px;
+}
+
+main h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 75px;
+    /* identical to box height */
+    text-align: center;
+    margin-top: 122px;
+    color: #FFFFFF;
+}
+
+/*smooth_appearance*/
+.element-animation {
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+.element-animation.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+}
+
+/*/smooth_appearance*/
+.first_p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+    width: 260px;
+    text-align: center;
+    margin: auto;
+    text-transform: lowercase;
+    margin-top: 26px;
+    color: #FFFFFF;
+}
+
+.first-border {
+    border: 1px solid #FFFFFF;
+    transform: rotate(90deg);
+    width: 59px;
+    height: 0px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.earth-block {
+    background-repeat: no-repeat;
+    background-image: url("../images/earth-bg.png");
+    height: 1006px;
+    background-size: 1400px;
+    background-position: center;
+}
+
+.rocket_content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rocket-info {
+    white-space: ;
+    margin-top: 492px;
+    margin-left: 220px;
+}
+
+.rocket-info h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    /* or 34px */
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    width: 177px;
+}
+
+.rocket-info table {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 179.69%;
+    /* or 32px */
+    margin-top: 45px;
+    white-space: nowrap;
+    color: #FFFFFF;
+}
+
+.rocket-info p {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+    color: #FFFFFF;
+    width: 490px;
+}
+
+td {
+    padding: 0 0 11px;
+}
+
+td:nth-child(odd) {
+    padding-right: 130px;
+}
+
+td span {
+    color: #B2B0B2;
+}
+
+
+
+.rocket_content img {
+    margin-right: 105px;
+}
+
+
+.rocket-info2 {
+    margin-top: 218px;
+}
+
+.rocket-info2 p {
+    margin-top: 45px;
+}
+
+/*footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 183px;
+    padding-bottom: 60px;
+}
+
+.footer_list {
+    display: flex;
+    margin-top: 52px;
+}
+
+footer p,
+button {
+    margin-top: 30px;
+}
+
+.footer_list li {
+    margin-right: 20px;
+}
+
+
+.footer_list a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+footer p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #808080;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #808080;
+}
+
+
+footer p a:hover {
+    transition: 1s;
+    color: white;
+}
+
+button {
+    width: 260px;
+    height: 60px;
+    background-color: black;
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #FFFFFF;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    margin-bottom: ;
+}
+
+
+button:hover {
+    background-color: white;
+    color: black;
+}
